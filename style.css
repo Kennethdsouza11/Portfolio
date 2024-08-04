@@ -253,3 +253,74 @@ section {
 .btn-container {
   gap: 1rem;
 }
+
+.icon-in-details-container{
+    cursor: pointer;
+    height: 2rem;
+    border-radius: 2rem;
+    fill: white;
+}
+
+/* About Section */
+
+#about{
+    position: relative;
+    margin: 0 20rem;
+}
+
+.about-container{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container{
+    display: flex;
+}
+
+.about-me-pic{
+    border-radius: 20rem;
+}
+
+.arrow{
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+    justify-content: center;
+}
+
+.section-container{
+    gap: 4rem;
+    height: 80%;
+    margin-top: -20px;
+}
+
+.section__pic-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    border-radius: 2000px;
+}
+
+.details-container h3,
+.details-container p{
+    color: black;
+    background-color: white;
+}
+
