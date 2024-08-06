@@ -9,7 +9,7 @@
 body {
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
-  background: black;
+  background: rgb(0, 0, 0);
 }
 
 .bubbles{
@@ -133,10 +133,10 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: black;
   width: fit-content;
   max-height: 0;
-  /* overflow: hidden; */
+  overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
 
@@ -306,6 +306,7 @@ section {
 #about h1{
     text-align: center;
 }
+
 .about-container{
     gap: 2rem;
     margin-bottom: 2rem;
@@ -322,10 +323,6 @@ section {
     display: flex;
 }
 
-.about-me-pic{
-    border-radius: 20rem;
-}
-
 .arrow{
     position: absolute;
     right: -5rem;
@@ -335,10 +332,10 @@ section {
 .details-container{
     padding: 1.5rem;
     flex: 1;
-    background: white;
-    border-radius: 2rem;
+    background: rgb(22, 22, 22);
+    border-radius: 0.5rem;
     border: rgb(53,53,53) 0.1rem solid;
-    border-color: rgb(163,163,163);
+    border-color: rgb(22, 22, 22);
     text-align: center;
     justify-content: center;
     margin-right: 20px;
@@ -346,8 +343,8 @@ section {
 
 .section-container{
     gap: 4rem;
-    height: 80%;
-    margin-top: -20px;
+    height: 60%;
+    bottom: -30px;
 }
 
 .section__pic-container{
@@ -359,7 +356,116 @@ section {
 
 .details-container h3,
 .details-container p{
-    color: black;
-    background-color: white;
+    color: rgb(255, 255, 255);
 }
 
+.icon-unified{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+/* Experience Section */
+
+#experience{
+  position: relative;
+}
+
+#experience h1{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.experience-details-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.article-container{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+article .icon{
+  cursor: default;
+}
+
+/* Projects Section*/
+
+#projects{
+  position: relative;
+}
+
+#projects h1{
+  text-align: center;
+}
+
+.color-container{
+  border-color: rgb(163,163,163);
+}
+
+.project-img{
+  border-radius: 1rem;
+  width: 80%;
+}
+
+.project-title{
+  margin: 1rem;
+  color: white;
+}
+
+.project-btn{
+  color: black;
+}
+
+/* CONTACT */
+
+#contact{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+#contact .title{
+  text-align: center;
+}
+
+.contact-info-upper-container{
+  display: flex;
+  justify-content: center;
+  border: rgb(53,53,53) 0.1rem solid;
+  border-color: rgb(163,163,163);
+  border-radius: 1rem;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  gap: 5rem;
+  text-align: center;
+}
+
+.contact-info-container p{
+  font-size: larger;
+}
+
+.contact-icon,
+.email-icon{
+  cursor: default;
+}
+
+/* FOOTER SECTION */
+
+footer{
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p{
+  text-align: center;
+}

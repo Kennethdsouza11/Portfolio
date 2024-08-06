@@ -1,163 +1,381 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
 
-<head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="mediaqueries.css" />
-</head>
-
-<body>
-  <div class="bubbles">
-    <span style="--i:21;"></span>
-    <span style="--i:15;"></span>
-    <span style="--i:21;"></span>
-    <span style="--i:13;"></span>
-    <span style="--i:31;"></span>
-    <span style="--i:22;"></span>
-    <span style="--i:10;"></span>
-    <span style="--i:16;"></span>
-    <span style="--i:14;"></span>
-    <span style="--i:41;"></span>
-    <span style="--i:25;"></span>
-    <span style="--i:17;"></span>
-    <span style="--i:18;"></span>
-    <span style="--i:12;"></span>
-    <span style="--i:31;"></span>
-    <span style="--i:30;"></span>
-    <span style="--i:36;"></span>
-    <span style="--i:19;"></span>
-    <span style="--i:21;"></span>
-    <span style="--i:10;"></span>
-    <span style="--i:30;"></span>
-    <span style="--i:34;"></span>
-    <span style="--i:28;"></span>
-    <span style="--i:26;"></span>
-    <span style="--i:21;"></span>
-    <span style="--i:15;"></span>
-  </div>
-
-  <nav id="desktop-nav">
-    <div class="logo">Kenneth Dsouza</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <body>
+    <div class="bubbles">
+      <span style="--i: 21"></span>
+      <span style="--i: 15"></span>
+      <span style="--i: 21"></span>
+      <span style="--i: 13"></span>
+      <span style="--i: 31"></span>
+      <span style="--i: 22"></span>
+      <span style="--i: 10"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 14"></span>
+      <span style="--i: 41"></span>
+      <span style="--i: 25"></span>
+      <span style="--i: 17"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 12"></span>
+      <span style="--i: 31"></span>
+      <span style="--i: 30"></span>
+      <span style="--i: 36"></span>
+      <span style="--i: 19"></span>
+      <span style="--i: 21"></span>
+      <span style="--i: 10"></span>
+      <span style="--i: 30"></span>
+      <span style="--i: 34"></span>
+      <span style="--i: 28"></span>
+      <span style="--i: 26"></span>
+      <span style="--i: 21"></span>
+      <span style="--i: 15"></span>
     </div>
-  </nav>
 
-  <nav id="hamburger-nav">
-    <div class="logo">Kenneth Dsouza</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
+    <nav id="desktop-nav">
+      <div class="logo">Kenneth Dsouza</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-  <section id="profile">
-    <div class="section__pic-container">
-      <img src="./assets/profile pic.jpg" alt="Kenneth Dsouza Profile pic" class="profile pic" />
-    </div>
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Kenneth Dsouza</h1>
-      <p class="section__text__p2">Machine Learning Intern</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/Kenneth Resume.pdf')">
-          Download CV
-        </button>
-        <button class="btn btn-color-1" onclick="location.href = './#contact'">
-          Contact Info
-        </button>
+    <nav id="hamburger-nav">
+      <div class="logo">Kenneth Dsouza</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
       </div>
-      <div id="socials-container">
-        <img src="./assets/github logo.png" alt="Github Logo" class="icon"
-          onclick="window.open('https://github.com/Kennethdsouza11','_blank')" />
+    </nav>
 
-        <img src="./assets/linkedin logo.jpg" alt="Linkedin Logo" class="icon"
-          onclick="window.open('https://www.linkedin.com/in/kenneth-dsouza-b564b4254/','_blank')" />
-      </div>
-    </div>
-  </section>
-
-  <section id="about">
-    <h1 class="title">About Me</h1>
-    <div class="section-container">
+    <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/about me logo.png" alt="Profile Picture" class="about-me-pic" />
+        <img
+          src="./assets/profile pic.jpg"
+          alt="Kenneth Dsouza Profile pic"
+          class="profile pic"
+        />
       </div>
-      <div class="about-details-container">
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Kenneth Dsouza</h1>
+        <p class="section__text__p2">Machine Learning Intern</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Kenneth Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/github logo.png"
+            alt="Github Logo"
+            class="icon"
+            onclick="window.open('https://github.com/Kennethdsouza11','_blank')"
+          />
+
+          <img
+            src="./assets/linkedin logo.jpg"
+            alt="Linkedin Logo"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/kenneth-dsouza-b564b4254/','_blank')"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.svg"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1 year <br />Machine Learning Intern</p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/AcademicCap.svg"
+                alt="Education logo"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                3rd year B.Tech Computer Science Engineering (AI) at Manipal
+                Institute of Technology
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ad
+              recusandae non dolore omnis nemo officia culpa eius neque alias
+              repellat libero soluta nobis, iste illum atque, minus corporis
+              sit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <img src="./assets/experience logo.jpg" alt="Experience icon" class="icon" />
-
-            <h3>Experience</h3>
-            <p>1 year <br />Machine Learning Intern</p>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/CheckCircle.svg"
+                  alt="Checkmark logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/CheckCircle.svg"
+                  alt="Checkmark logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/CheckCircle.svg"
+                  alt="Checkmark logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/CheckCircle.svg"
+                  alt="Checkmark Logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>Machine Learning</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/CheckCircle.svg"
+                  alt="Checkmark Logo"
+                  class="icon"
+                />
+                <div>
+                  <h3>C Programming</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
           </div>
-
           <div class="details-container">
-            <img src="./assets/education logo.png" alt="Education logo" class="icon" />
-            <h3>Education</h3>
-            <p>3rd year B.Tech Computer Science Engineering (AI) at Manipal Institute of Technology</p>
-          </div>
-        </div>
-        <div class="text-container">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos ad recusandae non dolore omnis nemo officia
-            culpa eius neque alias repellat libero soluta nobis, iste illum atque, minus corporis sit!</p>
-        </div>
-      </div>
-    </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href = './#experience'" />
-  </section>
-
-  <section id="experience">
-    <p class="section__text__p1">Explore</p>
-    <h1 class="title">Experience</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Machine Learning Intern</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.jpg" alt="Checkmark logo" class="icon" />
-              <div>
-                <h3>Python</h3>
-                <p>Experienced</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.jpg" alt="Checkmark logo" class="icon" />
-              <div>
-                <h3>HTML</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src = "./assets/checkmark.jpg" alt = "Checkmark logo" class = "icon" />
-              <div>
-                <h3>CSS</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
+            <div class="article-container">
+              <article>
+                <h2>Data Science Intern</h2>
+                <img
+                  src="./assets/unified mentor logo.jpeg"
+                  alt="Unified Mentor logo"
+                  class="icon-unified"
+                />
+                <p>Unified Mentor</p>
+              </article>
+              <article>
+                <h2>AI/ML Intern</h2>
+                <img
+                  src="./assets/nexus info logo.jpg"
+                  alt="Nexus Info Logo"
+                  class="icon"
+                />
+                <p>Nexus.info</p>
+              </article>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/unified mentor logo.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Kennethdsouza11/Portfolio','_blank'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://github.com/Kennethdsouza11/Portfolio','_blank'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
 
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/unified mentor logo.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Kennethdsouza11/Portfolio','_blank'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://github.com/Kennethdsouza11/Portfolio','_blank'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/unified mentor logo.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Kennethdsouza11/Portfolio','_blank'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://github.com/Kennethdsouza11/Portfolio','_blank'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/unified mentor logo.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Kennethdsouza11/Portfolio','_blank'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://github.com/Kennethdsouza11/Portfolio','_blank'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#contact'"
+      />
+    </section>
+
+    <section id = "contact">
+      <p class = "section__text__p1">Get in Touch</p>
+      <h1 class = "title">Contact Me</h1>
+      <div class = "contact-info-upper-container">
+        <div class = "contact-info-contianer">
+          <img src = "./assets/mail logo.jpg" alt = "Email icon" class = "icon contact-info email-icon"/>
+          <p><a href = "mailto:kennethdsouza2004@gmail.com">kennethdsouza2004@gmail.com</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class = "nav-links-container">
+          <ul class = "nav-links">
+            <li><a href = "#about">About</a></li>
+            <li><a href = "#experience">Experience</a></li>
+            <li><a href = "#projects">Projects</a></li>
+            <li><a href = "#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Kenneth Dsouza. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
